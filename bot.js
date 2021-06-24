@@ -2,7 +2,10 @@ const { Client, MessageEmbed } = require("discord.js");
 
 // Create client.
 // Invite link: https://discord.com/api/oauth2/authorize?client_id=857652604367405136&permissions=3104&scope=bot
-const client = new Client({ ws: { intents: [ "GUILDS", "GUILD_INVITES" ] } });
+const client = new Client({
+	partials: [ 'GUILD_MEMBER' ],
+	ws: { intents: [ 'GUILDS', 'GUILD_MEMBERS', 'GUILD_INVITES' ] }
+});
 
 // Colors.
 const SUCCESS_COLOR = "#50C878";
