@@ -9,9 +9,9 @@ const client = new Client({
 
 // Colors.
 const SUCCESS_COLOR = "#50C878";
-const INFO_COLOR = "5078C8";
+const INFO_COLOR = "#5078C8";
 const WARNING_COLOR = "#FFE791";
-const ERROR_COLOR = "C80815";
+const ERROR_COLOR = "#C80815";
 
 // Invite cache for invite link attribution.
 const cachedInvites = new Map();
